@@ -21,7 +21,7 @@ class FilmSeeder extends Seeder
             $film->title = fake()->sentence();
             $film->release_year = fake()->year();
             $film->director = fake()->name();
-            $film->genre = fake()->words(1);
+            $film->genre = fake()->words(1,true);
             $film->main_actor = fake()->sentence(4);
             $film->duration_minutes = fake()->numberBetween(60,180);
             $film->plot = fake()->paragraph;
